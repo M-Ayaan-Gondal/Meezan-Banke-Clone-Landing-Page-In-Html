@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-parent">
+      <section class="hero">
+        <nav class="navbar">
+          <div class="logo">
+            <img
+              src="https://vectorseek.com/wp-content/uploads/2020/12/Meezan-Bank-Logo-Vector.png"
+              alt="logo"
+            />
+          </div>
+
+          <!-- Links -->
+          <div class="links">
+            <div class="btn1"><p>personal</p></div>
+            <div class="btn2"><p>business</p></div>
+            <div class="btn3"><p>way to bank</p></div>
+            <div class="btn4"><p>about us</p></div>
+            <input type="text" placeholder="Search" />
+          </div>
+
+          <!-- Hamburger (for mobile) -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <h1></h1>
+            <span></span>
+            <span></span>
+          </div>
+
+          <!-- Internet Banking Button -->
+          <div class="nav-btn">
+            <button>Login</button>
+          </div>
+        </nav>
+
+        <!-- Mobile Links -->
+        <div class="links mobile" id="mobileMenu">
+          <!-- Close button -->
+          <div class="close-btn" onclick="toggleMenu()">✕</div>
+
+          <div class="btn1 btn"><p>personal</p></div>
+          <div class="btn2 btn"><p>business</p></div>
+          <div class="btn3 btn"><p>way to bank</p></div>
+          <div class="btn4 btn"><p>about us</p></div>
+          <input type="text" placeholder="Search" />
+        </div>
+        <!-- end mobile links -->
+         
+        <!-- main banner -->
+        <section class="main-banner">
+          <h1>
+            Our <span style="font-family: 'Meow Script'">Knowledge</span> Center
+          </h1>
+        </section>
+        <!-- end main banner -->
+        <section class="sub-nav">
+          <div class="sub-items">
+            <p>Publications</p>
+          </div>
+          <div class="sub-items">
+            <p>Audio & Video</p>
+          </div>
+          <div class="sub-items">
+            <p>Presentations</p>
+          </div>
+          <div class="sub-items">
+            <p>Glosarry of Terms</p>
+          </div>
+          <div class="sub-items">
+            <p>Public Awareness Videos</p>
+          </div>
+        </section>
+        <!-- sub-nav end -->
+        <section class="features">
+          <div class="feature-box">
+            <img
+              src="https://cdn-blog.zameen.com/blog/wp-content/uploads/2021/02/212-1024x640.jpg"
+              alt="Open Digital Account"
+            />
+            <h3>Open a Digital Account</h3>
+            <p>
+              You can open a Meezan Bank Account straight from our Meezan
+              Digital Account Opening App - it’s simple, safe and secure
+            </p>
+          </div>
+          <div class="feature-box">
+            <img
+              src="https://png.pngtree.com/thumb_back/fh260/background/20230613/pngtree-small-shopping-cart-on-the-edge-of-a-keyboard-in-dark-image_2912170.jpg"
+              alt="Debit Cards Discounts"
+            />
+            <h3>Debit Cards Discounts</h3>
+            <p>
+              Find the latest Meezan Card promotions here. Simply select your
+              location to view a list of exciting discounts and privileges on
+              your Meezan Debit Cards!
+            </p>
+          </div>
+          <div class="feature-box">
+            <img
+              src="https://enews.hamariweb.com/wp-content/uploads/2023/12/Meezan-Bank-Debit-Card.jpg"
+              alt="Debit Cards"
+            />
+            <h3>Debit Cards</h3>
+            <p>
+              Keep your money securely in your card and enjoy great discounts
+              and convenient accessibility
+            </p>
+          </div>
+          <div class="feature-box">
+            <img
+              src="https://www.iwriter.com/blog/wp-content/uploads/2020/10/freelance-writer.jpeg"
+              alt="Accounts For Freelancer"
+            />
+            <h3>Accounts For Freelancer</h3>
+            <p>
+              Avail the opportunity to have your own full-fledged
+              Savings/Current account
+            </p>
+          </div>
+        </section>
+        <!-- end features -->
+
+        <section class="bank-section">
+          <h2>Ways to Bank with Us</h2>
+          <div class="bank-options">
+            <div class="bank-box">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/020/911/731/original/profile-icon-avatar-icon-user-icon-person-icon-free-png.png"
+                alt="Branches"
+              />
+              <h3>Branches</h3>
+              <p>Get state-of-the-art branch banking services.</p>
+            </div>
+
+            <div class="bank-box">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/027/254/592/original/atm-icon-in-thin-line-black-square-frames-png.png"
+                alt="ATMs"
+              />
+              <h3>ATMs</h3>
+              <p>Enjoy a host of banking services round-the-clock!</p>
+            </div>
+
+            <div class="bank-box">
+              <img
+                src="https://images.vexels.com/media/users/3/157345/isolated/preview/934008c8466ce089e15947cec0a7c61d-flat-laptop-icon-laptop.png"
+                alt="Internet Banking"
+              />
+              <h3>Internet Banking</h3>
+              <p>Simple, hassle-free way to bank, anytime, anywhere!</p>
+            </div>
+
+            <div class="bank-box">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/011/911/176/small_2x/smartphone-icon-with-transparent-background-free-png.png"
+                alt="Mobile Banking"
+              />
+              <h3>Mobile Banking</h3>
+              <p>Is NOW Available! Convenience at the touch of a button.</p>
+            </div>
+
+            <div class="bank-box">
+              <img
+                src="https://cdn3.iconfinder.com/data/icons/extras-set-1/512/5-1024.png"
+                alt="Debit Cards"
+              />
+              <h3>Debit Cards</h3>
+              <p>Which Debit Card is right for you?</p>
+            </div>
+
+            <div class="bank-box">
+              <img
+                src="https://vectorified.com/images/headphone-icon-png-6.png"
+                alt="Call Centre"
+              />
+              <h3>Call Centre</h3>
+              <p>Our Bank is available 24/7 for you</p>
+            </div>
+          </div>
+        </section>
+        <!-- bank-section end -->
+
+        <!-- Awards Section -->
+        <section class="awards-section">
+          <h2>Awards & Recognition</h2>
+          <div class="awards-logos">
+            <img src="asiamoney.png" alt="Asiamoney" />
+            <img src="islamic-finance.png" alt="Islamic Finance Awards" />
+            <img src="cfa.png" alt="CFA Society Pakistan" />
+            <img src="gifa.png" alt="GIFA" />
+          </div>
+          <a href="#">Learn More</a>
+        </section>
+
+        <!-- Service Desk -->
+        <section class="service-desk">
+          <h2>Service Desk – Click Me</h2>
+          <div class="service-options">
+            <div class="service-box">
+              <img src="SECP.png" alt="SECP" />
+            </div>
+
+            <div class="service-box">
+              <h3>Toll Free</h3>
+              <p>(From Landline Only)<br /><strong>0800-88008</strong></p>
+            </div>
+
+            <div class="service-box">
+              <h3>Complaints</h3>
+              <p>
+                <a href="https://sdms.secp.gov.pk/" target="_blank"
+                  >https://sdms.secp.gov.pk</a
+                ><br />complaints@secp.gov.pk
+              </p>
+            </div>
+
+            <div class="service-box">
+              <h3>Queries</h3>
+              <p>queries@secp.gov.pk</p>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+
+        <footer>
+          <!-- Top Purple Bar -->
+          <div class="footer-top">
+            <div>
+              <i>📍</i>
+              Locate a Branch
+            </div>
+            <div>
+              <i>📞</i>
+              Contact Us
+            </div>
+            <div>
+              <i>💼</i>
+              Careers
+            </div>
+            <div>
+              <i>🤝</i>
+              Investor Relations
+            </div>
+          </div>
+
+          <!-- Middle Content -->
+          <div class="footer-middle">
+            <!-- Media Centre -->
+            <div>
+              <h4>Media Centre</h4>
+              <ul>
+                <li><a href="#">News & Press Releases</a></li>
+                <li><a href="#">Notices & Announcements</a></li>
+                <li><a href="#">Financial Results</a></li>
+                <li><a href="#">PAGES, The Meezan Newsletter</a></li>
+              </ul>
+              <h4>Knowledge Centre</h4>
+              <ul>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Glossary of Terms</a></li>
+                <li><a href="#">IIIB</a></li>
+              </ul>
+            </div>
+
+            <!-- Personal Banking -->
+            <div>
+              <h4>Personal Banking</h4>
+              <ul>
+                <li><a href="#">Bank Accounts</a></li>
+                <li><a href="#">Term Deposits</a></li>
+                <li><a href="#">Consumer Finance</a></li>
+                <li><a href="#">Home Remittance</a></li>
+                <li><a href="#">Premium Banking</a></li>
+              </ul>
+
+              <h4>Business Banking</h4>
+              <ul>
+                <li><a href="#">Small Business</a></li>
+                <li><a href="#">Corporate Banking</a></li>
+                <li><a href="#">Islamic Advisory Services</a></li>
+                <li><a href="#">Agricultural Finance</a></li>
+                <li><a href="#">Correspondent Banking</a></li>
+                <li><a href="#">Asset Management</a></li>
+              </ul>
+            </div>
+
+            <!-- Branch Network -->
+            <div>
+              <h4>Branch Network</h4>
+              <ul>
+                <li><a href="#">FX Authorized Branches</a></li>
+                <li><a href="#">Saturday On Branches</a></li>
+                <li><a href="#">SameDay Clearing Branches</a></li>
+                <li><a href="#">PWD Designated Branches</a></li>
+                <li><a href="#">Branches with Ramps</a></li>
+                <li><a href="#">Cash Deposit Machines</a></li>
+                <li><a href="#">Off-Site ATMs</a></li>
+              </ul>
+            </div>
+
+            <!-- About Us -->
+            <div>
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="#">Corporate Profile</a></li>
+                <li><a href="#">Corporate Social Responsibility</a></li>
+                <li><a href="#">Code of Conduct</a></li>
+                <li><a href="#">Policy Excerpts</a></li>
+              </ul>
+
+              <h4>Investor Relations</h4>
+              <ul>
+                <li><a href="#">Financial Information</a></li>
+                <li><a href="#">Investor Information</a></li>
+                <li><a href="#">Contact Information</a></li>
+              </ul>
+            </div>
+
+            <!-- Downloads -->
+            <div>
+              <h4>Downloads</h4>
+              <ul>
+                <li><a href="#">Public Awareness Notices from SBP & PBA</a></li>
+                <li><a href="#">Schedule of Charges</a></li>
+                <li><a href="#">Key Fact Statements</a></li>
+                <li><a href="#">Profit Rates</a></li>
+                <li><a href="#">PER & IRR Policy</a></li>
+                <li><a href="#">Foreign Exchange Rates</a></li>
+                <li><a href="#">Foreign Remittance Rates</a></li>
+                <li><a href="#">NOSTROS</a></li>
+                <li><a href="#">NIFT Clearing Timings</a></li>
+                <li><a href="#">Premature Encashment Schedule</a></li>
+                <li><a href="#">Show More</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-contact">
+              <h4>Registered / Head Office</h4>
+              <p>Meezan House, C-25 Estate Avenue,<br />SITE, Karachi.</p>
+              <p>
+                📧 <a href="mailto:info@meezanbank.com">info@meezanbank.com</a>
+              </p>
+              <p>
+                📧
+                <a href="mailto:complaints@meezanbank.com"
+                  >complaints@meezanbank.com</a
+                >
+              </p>
+              <p>📞 +92 21 111 331 331<br />+92 21 111 331 332</p>
+
+              <div class="social-icons">
+                <a href="#"
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                    alt="YouTube"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+                    alt="LinkedIn"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                    alt="X"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png"
+                    alt="Facebook"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+                    alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom -->
+          <div class="footer-bottom">
+            © 2025 Meezan Bank. All Rights Reserved. |
+            <a href="#">Disclaimer</a> | <a href="#">Careers</a> |
+            <a href="#">Al-Meezan</a> | <a href="#">Internet Banking</a> |
+            <a href="#">Sitemap</a>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
