@@ -61,7 +61,7 @@ body {
   background: #ffd400;
 }
 
-.links .btn1 {
+.links .btn:nth-child(1) {
   border-left: 1px solid rgb(189, 189, 189);
 }
 
@@ -222,6 +222,9 @@ body {
   }
   .hero {
     overflow-x: hidden;
+  }
+  .links.mobile div{
+    border-right: none;
   }
 }
 
